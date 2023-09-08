@@ -1,15 +1,11 @@
-# rb_tree
-golang 红黑树
-
-## 用法
-```go
-package main
+package rb_tree
 
 import (
 	"fmt"
+	"testing"
 )
 
-func main() {
+func TestRBTree(t *testing.T) {
 	RBTree := NewRBTree()
 
 	RBTree.Insert(1, 10)
@@ -33,5 +29,3 @@ func main() {
 		fmt.Println("Key 3 not found")
 	}
 }
-
-```
